@@ -45,8 +45,8 @@ CVDs_Detection_using_ECG_TimeSeries_Forecasting/
 
 | Model | Architecture | Key Features |
 |-------|-------------|-------------|
-| **Chronos** | LSTM-based | Advanced dropout, multi-layer LSTM |
-| **Moirai** | GRU-based | Efficient gated recurrent units |
+| **Chronos** | LSTM-based Transformer| Advanced dropout, multi-layer LSTM |
+| **Moirai** | GRU-based Transformer| Efficient gated recurrent units |
 | **TimeGPT** | LSTM Transformer | GPT-inspired time-series modeling |
 | **LSTM** | Long Short-Term Memory | Classic sequential modeling |
 | **GRU** | Gated Recurrent Unit | Simplified gating mechanism |
