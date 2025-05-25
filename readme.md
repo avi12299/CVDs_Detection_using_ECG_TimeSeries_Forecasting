@@ -129,17 +129,7 @@ trainer = pl.Trainer(max_epochs=50)
 trainer.fit(model, train_loader, val_loader)
 ```
 
-### Advanced Configuration
-```python
-# Custom model configuration
-model_config = {
-    'n_hidden': 128,
-    'n_layers': 4,
-    'dropout': 0.3
-}
 
-model = ChronosModel(input_size=12, output_size=1, **model_config)
-```
 
 ## 📈 Performance Metrics
 
@@ -191,16 +181,6 @@ MAX_EPOCHS = 50        # Training epochs
 PATIENCE = 15          # Early stopping patience
 ```
 
-### Model Hyperparameters
-```python
-# Model-specific configurations
-model_configs = {
-    "n_hidden": 64,     # Hidden layer size
-    "n_layers": 3,      # Number of layers
-    "dropout": 0.2,     # Dropout rate
-    "learning_rate": 1e-3  # Optimizer learning rate
-}
-```
 
 ## 🛠️ Advanced Features
 
@@ -210,18 +190,6 @@ model_configs = {
 - **Memory Management**: GPU memory optimization
 - **Progress Tracking**: Real-time training monitoring
 
-### Extensible Architecture
-```python
-# Add custom models easily
-class CustomModel(BaseModel):
-    def __init__(self, input_size, output_size, **kwargs):
-        super().__init__(input_size, output_size)
-        # Your custom architecture here
-    
-    def forward(self, x):
-        # Your forward pass here
-        return output
-```
 
 ## 📊 Visualization Gallery
 
@@ -230,6 +198,7 @@ class CustomModel(BaseModel):
 2. **Scatter Plots**: `scatter_plots/all_last_iterations_scatter_plots.png`
 3. **Line Plots**: `line_plots_*/all_last_iterations_line_plots.png`
 4. **Individual Results**: Model-specific prediction visualizations
+
 
 ## 🤝 Contributing
 
@@ -244,7 +213,7 @@ We welcome contributions! Please follow these guidelines:
 ### Development Setup
 ```bash
 # Development installation
-git clone https://github.com/yourusername/CVDs_Detection_using_ECG_TimeSeries_Forecasting.git
+git clone https://github.com/avi12299/CVDs_Detection_using_ECG_TimeSeries_Forecasting.git
 cd CVDs_Detection_using_ECG_TimeSeries_Forecasting
 pip install -e .
 ```
@@ -269,44 +238,9 @@ openpyxl>=3.0.0
 - **GPU**: CUDA-compatible (optional but recommended)
 - **Storage**: 2GB+ for datasets and results
 
-## 🐛 Troubleshooting
 
-### Common Issues
 
-**CUDA Out of Memory**
-```python
-# Reduce batch size
-BATCH_SIZE = 16  # Instead of 32
 
-# Enable gradient checkpointing
-model.gradient_checkpointing = True
-```
-
-**Missing Dependencies**
-```bash
-# Install missing packages
-pip install xlrd pytorch-lightning seaborn
-```
-
-**Data Loading Issues**
-```python
-# Ensure correct file paths
-file_path = "Datasets/P1.xlsx"  # Adjust path as needed
-```
-
-## 📚 Citation
-
-If you use this project in your research, please cite:
-
-```bibtex
-@article{your_paper_2024,
-  title={CVDs Detection using ECG Time-Series Forecasting and Deep Learning Models},
-  author={Your Name},
-  journal={Your Journal},
-  year={2024},
-  doi={your_doi}
-}
-```
 
 ## 📄 License
 
@@ -314,21 +248,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [@yourusername](https://github.com/yourusername)
+- **Avinash kumar** - *Initial work* - [@avi12299](https://github.com/yourusername)
 
 ## 🙏 Acknowledgments
 
 - PyTorch Lightning team for the excellent framework
 - Contributors to the ECG datasets
 - Open-source community for tool development
-- Medical professionals for domain expertise
 
 ## 📞 Support
 
 For support and questions:
-- 📧 **Email**: your.email@domain.com
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/CVDs_Detection_using_ECG_TimeSeries_Forecasting/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/CVDs_Detection_using_ECG_TimeSeries_Forecasting/discussions)
+- 📧 **Email**: avinashkr1302@gmail.com
+- 🐛 **Issues**: [GitHub Issues](https://github.com/avi12299/CVDs_Detection_using_ECG_TimeSeries_Forecasting/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/avi12299/CVDs_Detection_using_ECG_TimeSeries_Forecasting/discussions)
 
 ---
 
