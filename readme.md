@@ -111,25 +111,6 @@ The project uses ECG time-series data from 5 patients (P1-P5), each containing:
 5. Split into train/validation/test sets
 ```
 
-## 🎯 Usage Examples
-
-### Basic Usage
-```python
-from your_module import load_and_preprocess_data, ChronosModel
-import torch
-
-# Load and preprocess data
-X_train, y_train, X_val, y_val, X_test, y_test, scaler = load_and_preprocess_data("p_1.xlsx")
-
-# Initialize model
-model = ChronosModel(input_size=12, output_size=1)
-
-# Train model (using PyTorch Lightning)
-trainer = pl.Trainer(max_epochs=50)
-trainer.fit(model, train_loader, val_loader)
-```
-
-
 
 ## 📈 Performance Metrics
 
